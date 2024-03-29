@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "stylelint-order",
+    "stylelint-prettier",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "selector-class-pattern": "^[a-zA-Z0-9]"
+  }
+}
