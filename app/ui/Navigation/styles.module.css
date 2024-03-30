@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  gap: 50px;
+}
+
+.navigation li {
+  display: flex;
+}
+
+.navigation__link {
+  font-size: 20px;
+  padding-bottom: 4px;
+  border-bottom: 4px solid transparent;
+}
+
+.navigation__link_active {
+  border-bottom-color: white;
+}
