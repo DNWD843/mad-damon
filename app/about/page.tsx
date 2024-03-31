@@ -1,11 +1,10 @@
 import { FC } from 'react'
-import { Navigation } from '@/app/ui'
+import type { Metadata } from 'next'
 
-const InfoPage: FC = () => (
-  <div>
-    <Navigation />
-    InfoPage
-  </div>
-)
+export const metadata: Metadata = {
+  title: 'Обо мне',
+}
+
+const InfoPage: FC = () => <div>InfoPage</div>
 
 export default InfoPage

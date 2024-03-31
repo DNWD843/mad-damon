@@ -1,11 +1,10 @@
 import { FC } from 'react'
-import { Navigation } from '@/app/ui'
+import type { Metadata } from 'next'
 
-const ProjectsPage: FC = () => (
-  <div>
-    <Navigation />
-    ProjectsPage
-  </div>
-)
+export const metadata: Metadata = {
+  title: 'Портфолио',
+}
+
+const ProjectsPage: FC = () => <div>ProjectsPage</div>
 
 export default ProjectsPage

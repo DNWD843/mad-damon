@@ -11,8 +11,13 @@
   padding-bottom: 4px;
   font-size: 20px;
   border-bottom: 4px solid transparent;
+  transition: opacity 0.125s linear;
 }
 
 .navigation__link_active {
-  border-bottom-color: white;
+  border-bottom-color: inherit;
+}
+
+.navigation__link:hover {
+  opacity: 0.6;
 }
