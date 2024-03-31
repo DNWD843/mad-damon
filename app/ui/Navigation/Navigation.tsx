@@ -7,9 +7,9 @@ import classNames from 'classnames'
 import styles from './styles.module.css'
 
 const navLinks = [
-  { href: '/my/info', name: 'Обо мне' },
-  { href: '/my/portfolio', name: 'Портфолио' },
-  { href: '/my/contacts', name: 'Контакты' },
+  { href: '/about', name: 'Обо мне' },
+  { href: '/portfolio', name: 'Портфолио' },
+  { href: '/contacts', name: 'Контакты' },
 ]
 
 export const Navigation: FC = () => {

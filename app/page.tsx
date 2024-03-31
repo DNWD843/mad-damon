@@ -1,14 +1,9 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { Navigation } from '@/app/ui'
 
 export default function Home() {
   return (
     <>
-      <header className={styles.header}>
-        <span className={styles.header__logo}>Mad Damon</span>
-        <Navigation />
-      </header>
       <main className={styles.content}>
         <h1 className={styles.content__title}>Дмитрий Неклюдов</h1>
         <div className={styles.info}>

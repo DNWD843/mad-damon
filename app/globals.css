@@ -108,6 +108,21 @@ a {
   height: 100vh;
 }
 
+.layoutHeader {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 24px var(--desktop-padding);
+}
+
+.layoutHeader__logo {
+  font-weight: 700;
+  font-size: 28px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
