@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 0 50px;
+}
+
+.content p {
+  line-height: 1.5;
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 25px;
+}
+
+.content__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content__project {
+  padding-left: 30px;
+}
+
+.content__projectTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 2;
+}

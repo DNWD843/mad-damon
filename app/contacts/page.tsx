@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import type { Metadata } from 'next'
-import { ContactInfoItem } from '@/app/ui/ContactInfoItem'
 import { ContactInfo } from '@/app/types'
+import { InfoItem } from '@/app/ui/'
 import styles from './styles.module.css'
 
 const contacts: ContactInfo[] = [
@@ -17,7 +17,7 @@ const contacts: ContactInfo[] = [
   },
   {
     title: 'Email',
-    text: 'dmitry.neklyudov@yandex.ru',
+    text: 'dmitriy.neklyudov@yandex.ru',
   },
   { title: 'GitHub', text: 'dnwd843', href: 'https://github.com/DNWD843' },
 ]
@@ -32,7 +32,7 @@ const ContactsPage: FC = () => {
       <h2>Контакты</h2>
       <ul className={styles.contacts}>
         {contacts.map((contact) => (
-          <ContactInfoItem
+          <InfoItem
             key={contact.title}
             {...contact}
           />

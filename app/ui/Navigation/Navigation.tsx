@@ -8,7 +8,7 @@ import styles from './styles.module.css'
 
 const navLinks = [
   { href: '/about', name: 'Обо мне' },
-  { href: '/portfolio', name: 'Портфолио' },
+  { href: '/projects', name: 'Проекты' },
   { href: '/contacts', name: 'Контакты' },
 ]
 

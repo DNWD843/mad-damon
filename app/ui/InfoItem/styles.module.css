@@ -1,0 +1,16 @@
+.infoItem {
+  display: grid;
+  grid-template-columns: minmax(100px, 300px) 1fr;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.infoItem__link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.125s linear;
+}
+
+.infoItem__link:hover {
+  opacity: 0.6;
+}
