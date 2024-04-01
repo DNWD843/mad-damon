@@ -34,6 +34,7 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+  --scrollbar-track-color: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,6 +64,7 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+    --scrollbar-track-color: black;
   }
 }
 
