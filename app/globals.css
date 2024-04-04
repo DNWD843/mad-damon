@@ -117,6 +117,9 @@ a {
   width: 100%;
   max-width: var(--max-width);
   padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .layoutHeader {
@@ -146,7 +149,7 @@ a {
 
 @media screen and (width < 1280px) {
   * {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   h2 {
@@ -155,5 +158,25 @@ a {
 
   .layoutHeader__logo {
     font-size: 24px;
+  }
+}
+
+@media screen and (width < 768px) {
+  .page__content {
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: flex-start;
+  }
+
+  * {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .layoutHeader__logo {
+    font-size: 20px;
   }
 }
