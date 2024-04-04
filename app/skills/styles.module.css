@@ -3,10 +3,10 @@
   flex-direction: column;
   gap: 16px;
   width: 100%;
-  height: 100vh;
-  overflow-y: auto;
   max-width: var(--max-width);
+  height: calc(100vh - 83px);
   padding: 50px 0;
+  overflow-y: auto;
 }
 
 .content::-webkit-scrollbar {
@@ -19,8 +19,8 @@
 
 .content::-webkit-scrollbar-thumb {
   background-color: darkgray;
-  border-radius: 20px;
   border: 4px solid gray;
+  border-radius: 20px;
   box-shadow: 0 0 5px white;
 }
 
@@ -51,4 +51,25 @@
 .content__projectTitle {
   font-weight: 600;
   line-height: 2;
+}
+
+@media screen and (width < 1280px) {
+  .content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .content h3 {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-width: 2px;
+  }
 }

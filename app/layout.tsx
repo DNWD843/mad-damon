@@ -24,15 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={classNames(inter.className, 'page')}>
-        <header className="layoutHeader">
-          <Link
-            href="/"
-            className="layoutHeader__logo">
-            Mad Damon
-          </Link>
-          <Navigation />
-        </header>
-        {children}
+        <div className="page__content">
+          <header className="layoutHeader">
+            <Link
+              href="/"
+              className="layoutHeader__logo">
+              Mad Damon
+            </Link>
+            <Navigation />
+          </header>
+          {children}
+        </div>
       </body>
     </html>
   )
