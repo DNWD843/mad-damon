@@ -23,8 +23,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 900px;
   justify-content: center;
+  max-width: 900px;
 }
 
 .info__text {
@@ -34,17 +34,19 @@
 
 .info__avatar {
   justify-self: end;
+  border: 3px solid rgb(var(--foreground-rgb));
   border-radius: 50%;
 }
 
 @media screen and (width < 1280px) {
   .content {
+    grid-template-rows: min-content min-content auto;
+    gap: 60px;
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
-    align-items: center;
-    gap: 60px;
-    grid-template-rows: min-content min-content auto;
   }
+
   .content__title {
     font-size: 40px;
   }
@@ -61,9 +63,10 @@
 
 @media screen and (width < 768px) {
   .content {
-    align-items: flex-start;
     gap: 40px;
+    align-items: flex-start;
   }
+
   .content__title {
     font-size: 28px;
     text-align: center;
@@ -74,8 +77,8 @@
   }
 
   .info__avatar {
+    justify-self: center;
     width: 171px;
     height: 181px;
-    justify-self: center;
   }
 }

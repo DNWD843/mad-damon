@@ -1,9 +1,13 @@
 .navigation {
   display: flex;
+}
+
+.navigation__linksList {
+  display: flex;
   gap: 50px;
 }
 
-.navigation li {
+.navigation__linksList li {
   display: flex;
 }
 
@@ -22,6 +26,10 @@
   opacity: 0.6;
 }
 
+.navigation_mobile {
+  display: none;
+}
+
 @media screen and (width < 1280px) {
   .navigation__link {
     font-size: 18px;
@@ -29,7 +37,50 @@
 }
 
 @media screen and (width < 768px) {
+  .navigation_desktop {
+    display: none;
+  }
+
+  .navigation_mobile {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .navigation__burgerMenuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.125s linear;
+  }
+
+  .navigation__burgerMenuButton:hover {
+    opacity: 0.6;
+  }
+
   .navigation__link {
     font-size: 16px;
+  }
+
+  .mobileNavigation__dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 16px 32px;
+    background-color: rgb(var(--card-rgb));
+    border: 1px solid rgb(var(--foreground-rgb));
+    border-radius: 12px;
+  }
+
+  .navigation__linksList {
+    flex-direction: column;
+    gap: 32px;
   }
 }
