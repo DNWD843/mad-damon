@@ -142,7 +142,7 @@ a {
 }
 
 svg {
-  fill: rgb(var(--foreground-rgb));
+  fill: rgb(var(--foreground-rgb)) !important;
 }
 
 @media (prefers-color-scheme: dark) {
