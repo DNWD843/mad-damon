@@ -141,8 +141,10 @@ a {
   opacity: 0.6;
 }
 
-svg {
-  fill: rgb(var(--foreground-rgb)) !important;
+svg,
+svg path {
+  fill: rgb(var(--foreground-rgb));
+  stroke: rgb(var(--foreground-rgb));
 }
 
 @media (prefers-color-scheme: dark) {
