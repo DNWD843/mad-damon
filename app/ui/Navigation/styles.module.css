@@ -83,8 +83,4 @@
     flex-direction: column;
     gap: 32px;
   }
-
-  .navigation__burgerMenuButton svg {
-    fill: rgb(var(--foreground-rgb));
-  }
 }

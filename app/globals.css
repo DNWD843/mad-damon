@@ -114,12 +114,12 @@ a {
 }
 
 .page__content {
-  width: 100%;
-  max-width: var(--max-width);
-  padding: 0 64px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: var(--max-width);
   height: 100%;
+  padding: 0 64px;
 }
 
 .layoutHeader {
@@ -139,6 +139,10 @@ a {
 
 .layoutHeader__logo:hover {
   opacity: 0.6;
+}
+
+svg {
+  fill: rgb(var(--foreground-rgb));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -163,9 +167,9 @@ a {
 
 @media screen and (width < 768px) {
   .page__content {
-    padding-left: 16px;
-    padding-right: 16px;
     justify-content: flex-start;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   * {
