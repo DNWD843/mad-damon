@@ -118,7 +118,6 @@ a {
   flex-direction: column;
   width: 100%;
   max-width: var(--max-width);
-  height: 100%;
   padding: 0 64px;
 }
 
