@@ -50,8 +50,8 @@ const SkillsPage: FC = () => (
         подачи заявки до принятия решения по объекту строительтсва
       </p>
       <p>
-        Стек: React, TypeScript, react-context, react-hook-form, yup, ui-kit от
-        заказчика
+        Стек: React, TypeScript, react-context, react-query, react-hook-form,
+        yup, ui-kit от заказчика
       </p>
       <p>Роль: фронтенд-разработчик</p>
       <p>Срок: 1 год 2 месяца</p>
@@ -81,7 +81,7 @@ const SkillsPage: FC = () => (
       <p>Задачи: разработка информационного портала</p>
       <p>Стек: NextJS, TypeScript, ui-kit от заказчика</p>
       <p>Роль: фронтенд-разработчик</p>
-      <p>Срок: март 2024 - наст.время</p>
+      <p>Срок: 2 месяца</p>
     </div>
   </main>
 )
